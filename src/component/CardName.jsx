@@ -1,9 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-const CardName = ({data}) => {
+const CardName = () => {
+    const dariRedux = useSelector((haha) => haha);
+    console.log(dariRedux)
     return (
         <div>
-            <h1>{data.nama}</h1>
+            <h1>{dariRedux.data.nama}</h1>
         </div>
     )
 }
