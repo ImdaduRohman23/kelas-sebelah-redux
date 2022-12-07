@@ -2,11 +2,10 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const CardName = () => {
-    const dariRedux = useSelector((haha) => haha);
-    console.log(dariRedux)
+    const {data} = useSelector((haha) => haha); //dg distraktor
     return (
         <div>
-            <h1>{dariRedux.data.nama}</h1>
+            <h1>{data.nama}</h1>
         </div>
     )
 }
