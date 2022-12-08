@@ -2,11 +2,10 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const CardImage = () => {
-    const dariRedux = useSelector((haha) => haha);
-
+    const dariRedux = useSelector((datas) => datas);
     return (
         <div>
-            <img src={dariRedux.data.avatar} alt="" />
+            <img src={dariRedux.dataReducer.data.avatar} alt="name" />
         </div>
     )
 }

@@ -1,9 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-const NavbarName = ({data}) => {
+const NavbarName = () => {
+    const {navbarReducer} = useSelector(haha => haha)
     return (
         <div>
-            <h1>{data.nama}</h1>
+            <h1>{navbarReducer.data.company}</h1>
         </div>
     )
 }
