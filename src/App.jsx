@@ -1,14 +1,12 @@
 import './App.css'
-import Card from './component/Card'
-import Navbar from './component/Navbar'
+import Counter from './component/Counter/Counter'
 
 function App() {
 
   return (
     <div>
-      <Navbar />
       <div className="App">
-        <Card />
+        <Counter />
       </div>
     </div>
   )
